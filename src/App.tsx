@@ -1,7 +1,11 @@
+import Layout from "./Layout";
+
 function App() {
 
   return (
-    <div>Admin Panel</div>
+    <Layout>
+      <div>Admin Panel</div>
+    </Layout>
   )
 }
 
