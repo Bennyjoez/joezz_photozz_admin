@@ -7,19 +7,11 @@ interface NavOptionsProps {
 
 export const NavOptions: React.FC<NavOptionsProps> = ({ showMobileNav }) => {
   return (
-    <ul className={showMobileNav ? "block absolute left-0 top-[100%] p-4 bg-accent text-white font-normal" : "hidden"}>
-      <li>
-        <Link to="/">Dashboard</Link>
-      </li>
-      <li>
-        <Link to="/profile">Profile</Link>
-      </li>
-      <li>
-        <Link to="/bookings">Bookings</Link>
-      </li>
-      <li>
-        <Link to="/messages">Messages</Link>
-      </li>
-    </ul>
+    <div className={showMobileNav ? "flex flex-col absolute left-0 top-[100%] p-4 bg-accent text-white font-normal z-10" : "hidden"}>
+      <Link className="hover:bg-primary-text p-2" to="/">Dashboard</Link>
+      <Link className="hover:bg-primary-text p-2" to="/profile">Profile</Link>
+      <Link className="hover:bg-primary-text p-2" to="/bookings">Bookings</Link>
+      <Link className="hover:bg-primary-text p-2" to="/messages">Messages</Link>
+    </div>
   );
 };
