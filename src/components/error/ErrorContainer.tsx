@@ -9,8 +9,8 @@ const ErrorContainer: React.FunctionComponent<ErrorContainerProps> = ({
   children,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row w-screen h-screen items-center justify-center">
-      <div className="h-[200px] w-[200px]">
+    <div className="flex flex-col sm:flex-row w-screen h-screen items-center justify-center">
+      <div className="md:h-[200px] w-[200px]">
         <img src={errorImg} alt="404" />
       </div>
       {children}
