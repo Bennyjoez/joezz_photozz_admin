@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setOnMobile(window.innerWidth <= 768);
+      setOnMobile(window.innerWidth < 1024);
     };
 
     handleResize();
