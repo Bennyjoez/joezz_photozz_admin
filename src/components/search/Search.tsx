@@ -18,7 +18,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='flex relative p-1 bg-primary-bg rounded w-[80%] mx-auto rounded-3xl'>
+    <form onSubmit={handleSubmit} className='flex relative p-1 bg-primary-bg w-[80%] mx-auto rounded-3xl'>
       <input
         type="text"
         placeholder="Search..."
