@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   }, []);
 
   return (
-    <div>
+    <div className={!onMobile ? "flex bg-primary-bg h-screen" : ""}>
       {onMobile && <MobileNavbar showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} />}
       {!onMobile && <DesktopNavbar />}
       <main>{children}</main>
