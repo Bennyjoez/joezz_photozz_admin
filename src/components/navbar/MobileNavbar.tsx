@@ -1,4 +1,4 @@
-import { NavOptions } from "./NavOptions";
+import { NavOptions } from "./MobileNavOptions";
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -47,13 +47,14 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
   return (
     <section>
       <div className="flex relative p-4 justify-between text-xl text-primary-text font-bold h-[70px]">
-        {
-          showMobileNav 
-          ?
+        {showMobileNav ? (
           <IoMdClose onClick={toggleMobileNav} className="cursor-pointer" />
-          :
-          <GiHamburgerMenu onClick={toggleMobileNav} className="cursor-pointer" />
-        }
+        ) : (
+          <GiHamburgerMenu
+            onClick={toggleMobileNav}
+            className="cursor-pointer"
+          />
+        )}
         <div>{activeRoute}</div>
         <img src={profile} alt="profile" className="rounded-full" />
         <NavOptions showMobileNav={showMobileNav} />
