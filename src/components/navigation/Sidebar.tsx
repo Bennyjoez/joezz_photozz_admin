@@ -9,7 +9,7 @@ import { FaCalendarCheck } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <section className="w-[200px] bg-white shadow-sidebar flex flex-col align-center gap">
+    <section className="w-[200px] bg-white shadow-sidebar flex flex-col align-center gap z-10" >
       <div className="grid place-items-center py-4">
         <img src={logo} alt="Logo" className="h-20" />
       </div>
