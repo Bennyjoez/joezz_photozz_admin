@@ -1,11 +1,8 @@
 import { NavLink } from "react-router-dom";
 import logo from "/logo.png";
-
 import { IoIosHome } from "react-icons/io";
 import { AiFillProfile, AiFillMessage } from "react-icons/ai";
 import { FaCalendarCheck } from "react-icons/fa";
-
-
 
 const Sidebar = () => {
   return (
