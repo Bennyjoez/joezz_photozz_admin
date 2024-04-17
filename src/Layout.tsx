@@ -31,7 +31,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {!onMobile && <Sidebar />}
       <main className='flex-1'>
         {!onMobile && <DesktopNavbar />}
-        {children}
+        <div className='p-2'>
+          {children}
+        </div>
       </main>
     </div>
   );
