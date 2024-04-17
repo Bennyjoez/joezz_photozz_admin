@@ -9,6 +9,7 @@ export default {
       colors: {
         'accent': "rgba(76, 73, 237, 1)",
         "primary-text": "#343C6A",
+        "secondary-text": "#B1B1B1",
         "primary-bg": "#F5F7FA",
       },
       boxShadow: {

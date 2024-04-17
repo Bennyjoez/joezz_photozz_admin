@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .navlink {
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgb(177 177 177);
+
+    &:hover {
+      color: rgba(76, 73, 237, 1);
+    }
+
+    &.active {
+      color: rgba(76, 73, 237, 1);
+    }
+  }
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

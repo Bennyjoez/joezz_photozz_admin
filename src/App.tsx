@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
 import Layout from "./Layout";
 
 function App() {
 
   return (
     <Layout>
-      <div>Admin Panel</div>
+      <Outlet />
     </Layout>
   )
 }
