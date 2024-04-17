@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from 'react';
-import MobileNavbar from './components/navbar/MobileNavbar';
-import DesktopNavbar from './components/navbar/DesktopNavbar';
+import MobileNavbar from './components/navigation/MobileNavbar';
+import DesktopNavbar from './components/navigation/Sidebar';
 
 interface LayoutProps {
   children: ReactNode;
