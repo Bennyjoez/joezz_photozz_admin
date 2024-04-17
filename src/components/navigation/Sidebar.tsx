@@ -7,7 +7,7 @@ import { FaCalendarCheck } from "react-icons/fa";
 
 
 
-const DesktopNavbar = () => {
+const Sidebar = () => {
   return (
     <section className="w-[200px] bg-white shadow-sidebar flex flex-col align-center gap">
       <div className="grid place-items-center py-4">
@@ -35,4 +35,4 @@ const DesktopNavbar = () => {
   );
 };
 
-export default DesktopNavbar;
+export default Sidebar;

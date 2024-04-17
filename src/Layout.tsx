@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from 'react';
 import MobileNavbar from './components/navigation/MobileNavbar';
-import DesktopNavbar from './components/navigation/Sidebar';
+import Sidebar from './components/navigation/Sidebar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -27,7 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className={!onMobile ? "flex bg-primary-bg h-screen" : ""}>
       {onMobile && <MobileNavbar showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} />}
-      {!onMobile && <DesktopNavbar />}
+      {!onMobile && <Sidebar />}
       <main>{children}</main>
     </div>
   );
