@@ -1,10 +1,9 @@
 import { NavOptions } from "./MobileNavOptions";
-import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { useLocation } from "react-router-dom";
 import profile from "/BEN.jpg";
 import SearchBox from "../search/Search";
+import useActiveRoute from "../../hooks/Route.hooks";
 
 interface MobileNavbarProps {
   showMobileNav: boolean;
@@ -15,8 +14,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
   showMobileNav,
   setShowMobileNav,
 }) => {
-  const [activeRoute, setActiveRoute] = useState("Dashboard");
-  const location = useLocation();
+  const activeRoute = useActiveRoute();
 
   const toggleMobileNav = () => {
     setShowMobileNav(!showMobileNav);
@@ -26,23 +24,6 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
     // TODO: Perform search logic here...
     console.log("Searching for:", query);
   };
-
-  useEffect(() => {
-    switch (location.pathname) {
-      case "/":
-        setActiveRoute("Dashboard");
-        break;
-      case "/messages":
-        setActiveRoute("Message");
-        break;
-      case "/bookings":
-        setActiveRoute("Bookings");
-        break;
-      default:
-        setActiveRoute("Dashboard");
-        break;
-    }
-  }, [location]);
 
   return (
     <section>
