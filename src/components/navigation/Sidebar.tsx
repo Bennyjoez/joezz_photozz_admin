@@ -50,7 +50,7 @@ const Sidebar = () => {
           <AiFillMessage />
           {sideOpen && <span>Messages</span>}
         </NavLink>
-        <div className="text-xl text-primary-text font-bold cursor-pointer animate-pulse w-full grid place-content-end">
+        <div className="text-xl text-primary-text font-bold cursor-pointer animate-pulse w-full grid place-content-end hover:text-accent">
           {sideOpen ? (
             <TfiControlBackward
               title="Collapse"
