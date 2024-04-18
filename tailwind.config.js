@@ -14,6 +14,9 @@ export default {
       },
       boxShadow: {
         "sidebar": '0 0 4px rgba(0, 0, 0, 0.3)'
+      },
+      fontFamily: {
+        "madimi": ['"Madimi One", "sans-serif"']
       }
     },
   },

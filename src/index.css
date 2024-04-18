@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Madimi+One&family=Sedan:ital@0;1&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +18,10 @@
 
     &.active {
       color: rgba(76, 73, 237, 1);
+    }
+
+    &.icons {
+      justify-content: center;
     }
   }
 }
