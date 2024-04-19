@@ -1,7 +1,11 @@
+import BookingsComponent from "../components/bookings/BookingsComponent";
+
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <section>
+      <BookingsComponent />
+    </section>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
