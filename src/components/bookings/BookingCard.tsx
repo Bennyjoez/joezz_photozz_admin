@@ -14,7 +14,7 @@ const BookingCard: React.FC<BookingCardProps> = ({ booking }) => {
   const { client, event, reservationDate, shootLocation, message } = booking;
 
   return (
-    <div className="flex flex-col w-full min-w-[300px] bg-white even:text-primary-text text-white odd:bg-card shadow-md sm:overflow-hidden rounded-xl border">
+    <div className="flex flex-col w-full min-w-[300px] bg-white even:text-primary-text text-white odd:bg-card shadow-md sm:overflow-hidden rounded-3xl border">
       <div className="flex flex-1 flex-col px-6 pt-6">
         {" "}
         <div className="text-lg font-bold">
@@ -39,7 +39,7 @@ const BookingCard: React.FC<BookingCardProps> = ({ booking }) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center mt-4 text-sm bg-card-lower p-6 rounded-b-xl border border-t-gray-300">
+      <div className="flex items-center mt-4 text-sm bg-card-lower p-6 rounded-b-3xl border border-t-gray-300">
         <svg
           className="w-4 h-4 mr-2"
           fill="none"
