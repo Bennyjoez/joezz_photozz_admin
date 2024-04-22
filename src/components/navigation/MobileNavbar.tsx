@@ -3,7 +3,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import profile from "/BEN.jpg";
 import SearchBox from "../search/Search";
-import useActiveRoute from "../../hooks/Route.hooks";
+import useActiveRoute from "../../hooks/useActiveRoute.hooks";
+import handleSearch from "../../utils/handleSearch";
 
 interface MobileNavbarProps {
   showMobileNav: boolean;
@@ -18,11 +19,6 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
 
   const toggleMobileNav = () => {
     setShowMobileNav(!showMobileNav);
-  };
-
-  const handleSearch = (query: string) => {
-    // TODO: Perform search logic here...
-    console.log("Searching for:", query);
   };
 
   return (
