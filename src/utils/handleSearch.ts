@@ -10,6 +10,7 @@ const handleSearch = (query: string) => {
       booking.message.toLowerCase().includes(lowerQuery)
     );
   });
+  console.log("searched", filtered)
   return filtered;
   // TODO: Handle the returned filtered data
 };

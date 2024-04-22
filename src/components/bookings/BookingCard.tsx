@@ -1,4 +1,5 @@
-import profile from "/BEN.jpg";
+import profile from "/BEN.jpg"; //TODO: Use dynamic image
+import { FaPhone } from "react-icons/fa6";
 
 interface BookingCardProps {
   booking: {
@@ -39,21 +40,8 @@ const BookingCard: React.FC<BookingCardProps> = ({ booking }) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center mt-4 text-sm bg-card-lower p-6 rounded-b-3xl border border-t-gray-300">
-        <svg
-          className="w-4 h-4 mr-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M3 8l12 12 9-9"
-          ></path>
-        </svg>
+      <div className="flex gap-2 items-center mt-4 text-sm bg-card-lower p-6 rounded-b-3xl border border-t-gray-300">
+        <FaPhone />
         <span>+1 (234) 567-8910</span>
       </div>
     </div>
