@@ -10,7 +10,7 @@ const BookingsComponent = () => {
       </div>
       <div className="flex md:flex-row  gap-2 overflow-x-scroll scrollbar-thin">
         {bookings.map((booking) => (
-          <BookingCard booking={booking} />
+          <BookingCard key={booking.reservationDate} booking={booking} />
         ))}
       </div>
     </div>
