@@ -6,23 +6,23 @@ interface SearchBoxProps {
 }
 
 const SearchBox: React.FC<SearchBoxProps> = ({ onSearch }) => {
-  const [query, setQuery] = useState<string>('');
+  const [searchQuery, setSearchQuery] = useState<string>('');
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(event.target.value);
+    setSearchQuery(event.target.value);
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    onSearch(query);
+    onSearch(searchQuery);
   };
 
   return (
     <form onSubmit={handleSubmit} className='flex relative p-1 bg-primary-bg w-[80%] mx-auto rounded-3xl'>
       <input
-        type="text"
+        type="search"
         placeholder="Search..."
-        value={query}
+        value={searchQuery}
         onChange={handleInputChange}
         className='p-1 border-spacing-0 bg-inherit outline-none flex-1 rounded-3xl'
       />
