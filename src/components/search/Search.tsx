@@ -21,10 +21,10 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch }) => {
     <form onSubmit={handleSubmit} className='flex relative p-1 bg-primary-bg w-[80%] mx-auto rounded-3xl'>
       <input
         type="search"
-        placeholder="Search..."
+        placeholder="Search Bookings..."
         value={searchQuery}
         onChange={handleInputChange}
-        className='p-1 border-spacing-0 bg-inherit outline-none flex-1 rounded-3xl'
+        className='p-1 pl-3 border-spacing-0 bg-inherit outline-none flex-1 rounded-3xl'
       />
       <button type="submit" className='absolute right-5 text-4xl text-primary-text'><CiSearch /></button>
     </form>
