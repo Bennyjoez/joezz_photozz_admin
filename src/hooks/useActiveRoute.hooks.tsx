@@ -14,7 +14,7 @@ const useActiveRoute = () => {
         setActiveRoute("Profile");
         break;
       case "/messages":
-        setActiveRoute("Message");
+        setActiveRoute("Messages");
         break;
       case "/bookings":
         setActiveRoute("Bookings");
