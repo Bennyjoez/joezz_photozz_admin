@@ -22,6 +22,11 @@ export default {
       },
       fontFamily: {
         "madimi": ['"Madimi One", "sans-serif"']
+      },
+      screens: {
+        small: {
+          'raw': "(max-width: 500px)",
+        }
       }
     },
   },
