@@ -4,6 +4,12 @@
 @tailwind utilities;
 
 @layer components {
+  .navlink-mobile {
+    &.active {
+      /* color: orangered; */
+    }
+  }
+
   .navlink {
     padding: 0.5rem;
     display: flex;

@@ -1,4 +1,4 @@
-import { NavOptions } from "./MobileNavOptions";
+import { MobileNavOptions } from "./MobileNavOptions";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import profile from "/BEN.jpg";
@@ -34,7 +34,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
         )}
         <div>{activeRoute}</div>
         <img src={profile} alt="profile" className="rounded-full" />
-        <NavOptions showMobileNav={showMobileNav} />
+        <MobileNavOptions showMobileNav={showMobileNav} />
       </div>
 
       <SearchBox onSearch={handleSearch} />
