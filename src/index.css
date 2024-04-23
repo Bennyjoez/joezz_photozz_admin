@@ -6,7 +6,7 @@
 @layer components {
   .navlink-mobile {
     &.active {
-      /* color: orangered; */
+      color: orangered;
     }
   }
 
@@ -33,22 +33,22 @@
 }
 
 .scrollbar-thin {
-  @apply overflow-y-auto; /* Enable scrollbar when needed */
+  @apply overflow-y-auto;
 }
 
 .scrollbar-thin::-webkit-scrollbar {
-  width: 8px; /* Adjust width for desired thinness */
-  height: 8px; /* Adjust height for horizontal scrollbars (optional) */
+  width: 8px;
+  height: 8px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Adjust track color (optional) */
+  background: transparent;
   border-radius: 20px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: rgba(76, 73, 237, 1); /* Adjust thumb color */
-  border-radius: 20px; /* Adjust roundness of the thumb */
+  background-color: transparent;
+  border-radius: 20px;
 }
 
 /*
