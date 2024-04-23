@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const BookingsComponent = () => {
   return (
-    <div className="w-[90%] sm:w-[60%] mx-auto sm:mx-4">
-      <div className="w-[100%] flex justify-between">
+    <div className="w-[95%] md:w-[60vw] mx-auto sm:mx-4 mb-8">
+      <div className="w-[100%] flex justify-between text-xl mb-3 text-primary-text">
         <span role="button">Upcoming</span>
         <Link to="/bookings"><span role="button">See All</span></Link>
       </div>
